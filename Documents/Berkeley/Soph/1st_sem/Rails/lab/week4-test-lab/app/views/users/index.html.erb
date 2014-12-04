@@ -1,0 +1,12 @@
+<h1>Users#index</h1>
+<% @users.each do |user| %>
+  <h1>
+    <% if user.yearsold > 20 %> 
+      <%= user.name %> is more than 20 years old.
+      <br>
+    <% end %>
+    <%= user.name %> : <%= user.phone %>
+  </h1>
+  <br>
+<% end %>
+<p>Find me in app/views/users/index.html.erb</p>
